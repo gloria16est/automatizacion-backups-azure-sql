@@ -4,7 +4,7 @@
 --1️ Creación de Credencial 
 CREATE CREDENTIAL [https://perezstorage.blob.core.windows.net/respaldos]
 WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
-SECRET = '?sv=2024-XX-XX&ss=b&srt=sco&sp=rwdlaciytfx&se=AAAA-MM-DD&sig=TOKEN_OCULTO';
+SECRET = '?sv=2024-11-04&ss=b&srt=sco&sp=rwdlaciytfx&se=2027-02-24T08:31:22Z&st=2026-02-25T00:16:22Z&spr=https&sig=TVRNUpooXKPIkofh8tjWQLDRWryBmMnYCC6xF%2FcCvqo%3D';
 GO
 
 -- 2️ Backup Completo hacia Azure
@@ -89,5 +89,6 @@ QuitWithRollback:
     IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION
 EndSave:
 GO
+
 
 
