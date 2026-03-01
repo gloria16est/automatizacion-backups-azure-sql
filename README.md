@@ -12,5 +12,8 @@ Este proyecto consiste en la implementación de un sistema de respaldos automát
 5. Configuración de un Job en SQL Server Agent.
 6. Programación automática del respaldo diario a las 12:00 am.
 
+## Automatización
+El respaldo se ejecuta automáticamente todos los días mediante SQL Server Agent, sin intervención manual.
+
 ## Seguridad
 La conexión se realiza mediante autenticación con Token SAS, evitando el uso directo de usuario y contraseña.
